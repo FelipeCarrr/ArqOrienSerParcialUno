@@ -9,6 +9,7 @@ routerProducto.get("/",productoController.getProducto);
 routerProducto.get("/:id",productoController.getProductoUnico);
 routerProducto.post("/", validate(postProductoValidator),productoController.postProducto);
 routerProducto.put("/:id", productoController.updateProducto);
+routerProducto.delete("/:id", productoController.deleteProducto);
 
 
 export default routerProducto;
